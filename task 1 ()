@@ -1,1 +1,161 @@
+class item:
+  def __init__(self, id, itemName, price):
+      self.id = id
+      self.itemName = itemName
+      self.price = price
 
+# Create bill display function
+def display(l, cName, cAddress):
+  total = 0
+  print("\n\n\n")
+  print("\t MGB MALL")
+  print("\t ")
+  print("Name: {} \t Address: {}\n".format(cName, cAddress))
+  for obj in l:
+      print("Id: {} \t ItemName: {} \tPrice: {}".format(obj.id, obj.itemName, obj.price))
+      total += obj.price
+  print("\t\tTotal: {}".format(total))
+  print("\n")
+  print("\tThanks for visiting")
+  print("\n\n")
+
+# Store object array
+list = []
+print("\n\n")
+print("Hello Everyone.....")
+cName = input("Enter your name: ")
+cAddress = input("Enter your address: ")
+totalItems = int(input("Enter total items: "))
+print("\n")
+
+# Take input item details
+for i in range(0, totalItems):
+  id = (i+1)
+  name = input("Enter item name: ")
+  while True:
+    try:
+      price = int(input("Enter price: "))
+      break
+    except ValueError:
+      print("Please enter a valid number for price.")
+  list.append(item(id, name, price))
+
+# Call display function
+display(list, cName, cAddress)
+
+
+
+++class item:
+  def __init__(self, id, itemName, price):
+      self.id = id
+      self.itemName = itemName
+      self.price = price
+
+# Create bill display function
+def display(l, cName, cAddress):
+  total = 0
+  print("\n\n\n")
+  print("\t MGB MALL")
+  print("\t ")
+  print("Name: {} \t Address: {}\n".format(cName, cAddress))
+  for obj in l:
+      print("Id: {} \t ItemName: {} \tPrice: {}".format(obj.id, obj.itemName, obj.price))
+      total += obj.price
+  print("\t\tTotal: {}".format(total))
+  print("\n")
+  print("\tThanks for visiting")
+  print("\n\n")
+
+# Store object array
+list = []
+print("\n\n")
+print("Hello Everyone.....")
+cName = input("Enter your name: ")
+cAddress = input("Enter your address: ")
+totalItems = int(input("Enter total items: "))
+print("\n")
+
+# Take input item details
+for i in range(0, totalItems):
+  id = (i+1)
+  name = input("Enter item name: ")
+  while True:
+    try:
+      price = int(input("Enter price: "))
+      break
+    except ValueError:
+      print("Please enter a valid number for price.")
+  list.append(item(id, name, price))
+
+# Call display function
+display(list, cName, cAddress)class item:
+  def __init__(self, id, itemName, price):
+      self.id = id
+      self.itemName = itemName
+      self.price = price
+
+# Create bill display function
+def display(l, cName, cAddress):
+  total = 0
+  print("\n\n\n")
+  print("\t MGB MALL")
+  print("\t ")
+  print("Name: {} \t Address: {}\n".format(cName, cAddress))
+  for obj in l:
+      print("Id: {} \t ItemName: {} \tPrice: {}".format(obj.id, obj.itemName, obj.price))
+      total += obj.price
+  print("\t\tTotal: {}".format(total))
+  print("\n")
+  print("\tThanks for visiting")
+  print("\n\n")
+
+# Store object array
+list = []
+print("\n\n")
+print("Hello Everyone.....")
+cName = input("Enter your name: ")
+cAddress = input("Enter your address: ")
+totalItems = int(input("Enter total items: "))
+print("\n")
+
+# Take input item details
+for i in range(0, totalItems):
+  id = (i+1)
+  name = input("Enter item name: ")
+  while True:
+    try:
+      price = int(input("Enter price: "))
+      break
+    except ValueError:
+      print("Please enter a valid number for price.")
+  list.append(item(id, name, price))
+
+# Call display function
+display(list, cName, cAddress)
+
+OUTPUT
+
+Hello Everyone.....
+Enter your name: sushant
+Enter your address: mumbai
+Enter total items: 2
+
+
+Enter item name: kam
+Enter price: 23
+Enter item name: soni
+Enter price: 34
+
+
+
+
+     MGB MALL
+     
+Name: sushant    Address: mumbai
+
+Id: 1    ItemName: kam  Price: 23
+Id: 2    ItemName: soni     Price: 34
+        Total: 57
+
+
+    Thanks for visiting
